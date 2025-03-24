@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            animation-name: changeposition;
+            animation-duration: 2s;
+            border-radius: 50%;
+            animation-iteration-count: 7;
+            animation-direction: alternate;
+            
+        }
+        @keyframes changeposition {
+            0%,100%{
+                top: 0px;
+                left: 0px;
+                position: relative;
+                
+            }
+            25%{
+                top: 0%;
+                left: 200px;
+                background-color: blue;
+            }
+            50%{
+                top: 200px;
+                left: 200px;
+                background-color: brown;
+            }
+            75%{
+                top: 200px;
+                left: 0px;
+                background-color: blueviolet;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    
+</body>
+</html>

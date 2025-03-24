@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Clone</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Global Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Header */
+      .header {
+        background-color: #5dbc8b;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        flex-wrap: wrap;
+        position: sticky;
+      }
+      .header a {
+        color: white;
+        text-decoration: none;
+        margin: 5px 10px;
+      }
+      .header a:hover {
+        color: #febd69;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #789bca;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        position: sticky;
+      }
+
+      .navbar-brand img {
+        height: 60px;
+      }
+
+      .search-bar {
+        display: flex;
+        flex-grow: 1;
+        margin: 10px 20px;
+      }
+      .search-bar input {
+        width: 100%;
+        padding: 8px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+      }
+      .search-bar button {
+        background: #febd69;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+
+      .nav-icons a {
+        color: white;
+        margin-left: 15px;
+        font-size: 1.2rem;
+        text-decoration: none;
+      }
+      .nav-icons a:hover {
+        color: #1d33bf;
+      }
+
+      /* Navigation Links */
+      .nav-links {
+        background-color: #796d74;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+      }
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+        font-size: 0.9rem;
+      }
+      .nav-links a:hover {
+        color: #d50648;
+      }
+
+      /* Hero Banner */
+      .hero-banner img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* Card Section */
+      .card-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #e3e6e6;
+      }
+
+      .card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 24%;
+        margin-bottom: 20px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+
+      .card h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 0.85rem;
+        color: #555;
+      }
+
+      /* Footer */
+      .footer {
+        background-color: #131921;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+        font-size: 0.85rem;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .card {
+          width: 32%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .navbar,
+        .header,
+        .nav-links {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .search-bar {
+          margin: 10px 0;
+        }
+
+        .nav-icons {
+          margin-top: 10px;
+        }
+
+        .card {
+          width: 48%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div>
+        Delivering to Bengaluru 560068 <a href="#">Update location</a>
+      </div>
+      <div>
+        <a href="#">Account & Lists</a>
+        <a href="#">Returns & Orders</a>
+        <a href="#">Cart</a>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="navbar-brand">
+        <img
+          src="amalogo.webp"
+          alt="Amazon Logo"
+        />
+      </div>
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search Amazon.in" />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <!-- Icons -->
+      <div class="nav-icons">
+        <a href="#"><i class="fas fa-user"></i></a>
+        <a href="#"><i class="fas fa-box"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="#">Fresh</a>
+      <a href="#">Mobiles</a>
+      <a href="#">Customer Service</a>
+      <a href="#">Electronics</a>
+      <a href="#">Prime</a>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+      <img
+        src="amahm.gif"
+        alt="Hero Banner"
+      />
+    </div>
+
+    <!-- Card Section -->
+    <div class="card-section">
+      <div class="card">
+        <img
+          src="ama4.jpg"
+          alt="Mobiles"
+        />
+        <h3>Mobiles</h3>
+        <p>Latest smartphones at great prices!</p>
+      </div>
+      <div class="card">
+        <img
+          src="amaelc.jpg"
+          alt="Electronics"
+        />
+        <h3>Electronics</h3>
+        <p>Best deals on gadgets and appliances.</p>
+      </div>
+      <div class="card">
+        <img
+          src="amaclo.gif"
+          alt="Clothing"
+        />
+        <h3>Clothing</h3>
+        <p>Fashion for all seasons.</p>
+      </div>
+      <div class="card">
+        <img
+          src="ama2.jpg"
+          alt="Home Essentials"
+        />
+        <h3>Home Essentials</h3>
+        <p>Everything you need for your home.</p>
+      </div>
+      <!-- Card Section -->
+    <div class="card-section">
+    <!-- Home & Kitchen Card -->
+    <div class="card">
+      <img
+        src="amakit.webp"
+        alt="Home & Kitchen"
+      />
+      <h3>Home & Kitchen</h3>
+      <p>Discover amazing deals on home essentials and kitchen appliances.</p>
+    </div>
+  
+    <!-- Bike Card -->
+    <div class="card">
+      <img
+        src="amabike.jpg"
+        alt="Bike"
+      />
+      <h3>Bike</h3>
+      <p>Accessories and essentials for your bike rides at great prices.</p>
+    </div>
+  
+    <!-- Car Card -->
+    <div class="card">
+      <img
+        src="amacar.jpg"
+        alt="Car"
+      />
+      <h3>Car</h3>
+      <p>Find car accessories, tools, and products for your vehicle.</p>
+    </div>
+  
+    <!-- Fashion Card -->
+    <div class="card">
+      <img
+        src="amafas.jpg"
+        alt="Fashion"
+      />
+      <h3>Fashion</h3>
+      <p>Trendy clothing, shoes, and accessories for everyone.</p>
+    </div>
+    </div>
+  
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      &copy; 2024 Amazon Clone | Designed by Om Prakash
+    </div>
+  </body>
+</html>

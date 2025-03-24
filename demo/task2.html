@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>APPLICATION FORM</h1>
+        <form>
+            <!-- Personal Details Section -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div class="form-row">
+                    <label for="applicant-name">Applicant's Full Name:</label>
+                    <select id="title" name="title">
+                        <option>Select</option>
+                        <option>Mr.</option>
+                        <option>Ms.</option>
+                    </select>
+                    <input type="text" id="applicant-name" name="applicant-name">
+                    
+                    <label for="care-of">Care Of:</label>
+                    <select id="care-of" name="care-of">
+                        <option>Parents</option>
+                        <option>Guardian</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="father-name">Father's Name:</label>
+                    <input type="text" id="father-name" name="father-name">
+                    
+                    <label for="mother-name">Mother's Name:</label>
+                    <input type="text" id="mother-name" name="mother-name">
+                </div>
+                <div class="form-row">
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="others" name="gender" value="others">
+                    <label for="others">Others</label>
+                    
+                    <label for="marital-status">Marital Status:</label>
+                    <select id="marital-status" name="marital-status">
+                        <option>Select</option>
+                        <option>Single</option>
+                        <option>Married</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label>Handicapped:</label>
+                    <input type="radio" id="handicapped-yes" name="handicapped" value="yes">
+                    <label for="handicapped-yes">Yes</label>
+                    <input type="radio" id="handicapped-no" name="handicapped" value="no">
+                    <label for="handicapped-no">No</label>
+                    
+                    <label>EWS:</label>
+                    <input type="radio" id="ews-yes" name="ews" value="yes">
+                    <label for="ews-yes">Yes</label>
+                    <input type="radio" id="ews-no" name="ews" value="no">
+                    <label for="ews-no">No</label>
+                </div>
+                <div class="form-row">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                    
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option>Select</option>
+                        <option>General</option>
+                        <option>OBC</option>
+                        <option>SC</option>
+                        <option>ST</option>
+                    </select>
+                    
+                    <label for="religion">Religion:</label>
+                    <select id="religion" name="religion">
+                        <option>Select</option>
+                        <option>Hindu</option>
+                        <option>Muslim</option>
+                        <option>Christian</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Contact Details Section -->
+            <fieldset>
+                <legend>Contact Details</legend>
+                <div class="form-row">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="text" id="mobile" name="mobile">
+                    
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-row">
+                    <label for="address1">Address Line 1:</label>
+                    <input type="text" id="address1" name="address1">
+                    
+                    <label for="address2">Address Line 2:</label>
+                    <input type="text" id="address2" name="address2">
+                </div>
+                <div class="form-row">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                    
+                    <label for="state">State:</label>
+                    <select id="state" name="state">
+                        <option>Select</option>
+                        <option>State 1</option>
+                        <option>State 2</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="pincode">Pin Code:</label>
+                    <input type="text" id="pincode" name="pincode">
+                </div>
+            </fieldset>
+
+            <!-- Qualification Details Section -->
+            <fieldset>
+                <legend>Qualification Details</legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr. No</th>
+                            <th>Qualification</th>
+                            <th>Board/University</th>
+                            <th>Passing Year</th>
+                            <th>Max Marks</th>
+                            <th>Marks Obtain</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <select name="qualification1">
+                                    <option>Select</option>
+                                    <option>Class 10</option>
+                                    <option>Class 12</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="board1"></td>
+                            <td><input type="text" name="year1"></td>
+                            <td><input type="text" name="max-marks1"></td>
+                            <td><input type="text" name="marks-obtained1"></td>
+                            <td><input type="text" name="percentage1"></td>
+                        </tr>
+                        <!-- Add more rows as necessary -->
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <!-- Identification Details -->
+            <fieldset>
+                <legend>Identification Details</legend>
+                <div class="form-row">
+                    <label for="aadhar">Aadhar Card Number:</label>
+                    <input type="text" id="aadhar" name="aadhar">
+                    
+                    <label for="pan">PAN Card Number:</label>
+                    <input type="text" id="pan" name="pan">
+                </div>
+                <div class="form-row">
+                    <label for="photo">Upload Photo:</label>
+                    <input type="file" id="photo" name="photo">
+                    
+                    <label for="signature">Upload Signature:</label>
+                    <input type="file" id="signature" name="signature">
+                </div>
+            </fieldset>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="button">Back</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

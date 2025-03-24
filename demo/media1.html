@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+            border-radius: 30px;
+           
+        }
+        .container{
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        @media (min-width:0px) and (max-width:700px)
+        {
+            img{
+                text-align: center;
+                height: 100px;
+                width: 100px;
+                justify-content: center;
+            }
+            body{
+                background-color: rgb(90, 222, 182);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">
+            <img src="tourism.jpg" alt="">
+        </div>
+        <div class="items"><img src="tourism1.jpg" alt=""></div>
+        <div class="items"> <img src="tourism1.jpg" alt=""></div>
+        <div class="items"> <img src="tourism.jpg" alt=""></div>
+        <div class="items"> <img src="tourism.jpg" alt=""></div>
+
+    </div>
+</body>
+</html>

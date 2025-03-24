@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:linear-gradient(rgb(162, 162, 222), rgb(184, 131, 197));
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.contact-form-container {
+    background-color: #84c3e0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.input-group label span {
+    color: red;
+}
+
+/* Name Fields */
+.name-group .name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input {
+    flex: 1;
+}
+
+/* Input Fields Styling */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #888;
+}
+
+/* Submit Button Styling */
+.submit-btn-container {
+    text-align: center;
+}
+
+.submit-btn {
+    background-color: #ff0066;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e6005c;
+}
+
+    </style>
+</head>
+<body>
+    <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form>
+            <!-- Full Name -->
+            <div class="input-group name-group">
+                <label for="first-name">Full name <span>*</span></label>
+                <div class="name-fields">
+                    <input type="text" id="first-name" placeholder="First" required>
+                    <input type="text" id="last-name" placeholder="Last" required>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="input-group">
+                <label for="email">Email <span>*</span></label>
+                <input type="email" id="email" placeholder="Your email" required>
+            </div>
+
+            <!-- Message -->
+            <div class="input-group">
+                <label for="message">Leave us a few words <span>*</span></label>
+                <textarea id="message" placeholder="Write your message..." rows="5" required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-btn-container">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

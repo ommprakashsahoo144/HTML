@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+</head>
+<style>
+    .container{
+        border: 7px solid blueviolet;
+        height: 200px;
+        width: 200px;
+        margin: 150px auto;
+        background-color: brown;
+        position: relative;
+        
+    }
+    
+    .items{
+        height: inherit;
+        width: inherit;
+        position: absolute;
+        transition: all 2s linear 0s;
+
+    }
+    .d1{
+        background-color: aqua;
+        
+    }
+    .d2{
+        background-color: blue;
+    }
+    .d3{
+        background-color: chartreuse;
+    }
+    .d4{
+        background-color: rgb(20, 167, 220);
+    }
+    .container:hover .d1{
+        transform: translateX(350px)rotate(1800deg);
+    }
+    .container:hover .d2{
+        transform: translateX(-350px) rotate(1800deg);
+    }
+    .container:hover .d3{
+        transform: translateY(250px) rotate(1800deg);
+    }
+    .container:hover .d4{
+        transform: translateY(-250px) rotate(1800deg);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="items d1"></div>
+        <div class="items d2"></div>
+        <div class="items d3"></div>
+        <div class="items d4"></div>
+    </div>
+</body>
+</html>

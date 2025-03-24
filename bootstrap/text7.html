@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+<style>
+    .img{
+        height: 300px;
+        width: 350px;
+        background-color: aliceblue;
+        margin: 200px 200px 200px 200px;
+        padding: 20px 20px;
+        transition: all 2s ease-in 1s;
+        
+    }
+    .img:hover{
+        height: 600px;
+        width: 700px;
+        transform: rotate(360deg);
+        
+    }
+</style>
+<body>
+    <div class="tr">
+        <img src="img2.jpg" height="200px" width="250px" class="img">
+    </div>
+</body>
+</html>
